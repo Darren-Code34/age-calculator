@@ -85,7 +85,7 @@ function calculAge(e){
         let nbrYear = Math.trunc(ageMilliseconds/(dayTimeMilliseconds*365))
         age.year = nbrYear
 
-        let nbrMonth = Math.trunc((ageMilliseconds % (dayTimeMilliseconds*365)) / (dayTimeMilliseconds*30))
+        let nbrMonth = Math.trunc((ageMilliseconds % (dayTimeMilliseconds*365)) / (dayTimeMilliseconds*31))
         age.month = nbrMonth
 
         let nbrDay = Math.trunc(((ageMilliseconds % (dayTimeMilliseconds*365)) % (dayTimeMilliseconds*30)) / dayTimeMilliseconds)
